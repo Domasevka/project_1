@@ -1,0 +1,82 @@
+@media screen and (max-width: 72rem) {
+.row {
+   width: 61rem;
+    padding: 0 5%;
+   }
+.site-description__title {
+    height: 85px;
+    width: 20%;
+   }
+.site-description__header {
+    height: 85px;
+    width: 80%;
+	padding-left: 0rem;
+    }
+.site-contacts {  
+    width: 50%;  
+    padding: 0.7rem 0;
+	float: left;
+	position: relative;
+	left: 25%;	
+    }
+}
+@media screen and (max-width: 61.25rem) {
+.row {
+   width: 90%;
+   padding: 0 5%;
+   }
+.site-description__title {
+    height: 80px;
+    width: 100%;
+   }
+.site-description__header {
+    height: 80px;
+    width: 100%;
+	padding: 0rem;
+    }
+.site-contacts { 
+   width: 100%;  
+   height: 100px;
+   position: relative;
+   left: 42%;
+   }
+.site-contacts__text {
+    display: none; 
+   }
+.site-contacts__number {
+   display: none; 
+   }
+.img-wrap__second {
+    background: url(../../build/img/bckg4_1.png) no-repeat;
+    background-size: 579px 300px;
+	height: 300px;
+	margin: -359px 0 0 -289px;
+	width: 579px;
+	}
+}
+@media screen and (max-width: 40.62rem) {
+.row {
+   width: 90%;
+   padding: 0 5%;
+   }
+.site-description__header {
+    height: 160px;
+    width: 100%;
+	}
+.site-contacts {
+   height: 80px;
+   left: 40%;
+   width: 100%;
+   position: relative;   
+   }
+.site-contacts__text {
+    display: none; 
+   }
+.site-contacts__img {
+    margin-top: 0rem;
+	width: 20%;	
+    }
+.site-contacts__number {
+   display: none; 
+   }
+}

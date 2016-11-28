@@ -1,0 +1,28 @@
+@mixin row() {
+    content: ' ';
+    display: table;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    }
+.row:after {
+    @include row();
+    }
+.row:before {
+    @include row();
+    }
+.row-main:after{
+    @include row();
+    }
+.row-main:before {
+    @include row();
+    }
+.row::after, .row-main:after {
+    clear: both;
+    }
+*, :after, :before {
+    box-sizing: inherit;
+    }
