@@ -30,7 +30,7 @@
       <div class="row">	     
           <div class="site-description">
 	       <h1 class="site-description__title">
-		    <a class="description-title__img" href="site1.html" rel="home"> </a>
+		    <a class="description-title__img" href="site1.html" rel="home"></a>
 		   </h1>
            <div class="site-description__header">
 		     <h2 class="description-header__title"><span class="description-header__title-main">Нужен проффесионал?</span><br>
@@ -44,14 +44,13 @@
 			<li class="site-contacts__img"><a href="site1.html"></a></li>
 			<li class="site-contacts__number">722-11-44</li>
 			</ul>
-	      </div>        
-	  </div>
+	      </div> 
+	     </div>
      </section>
     </div>	
    </div>  
    <div class="section-img">
-     <div class="section-img__first"></div> 
-   </div>
+    </div>
    <div class="img-wrap">
      <figure class="img-wrap__second"></figure>  
    </div>   
@@ -60,60 +59,67 @@
 	 <h2 class="expert-forms__title">Подберите специалиста по вашим критериям
 	 </h2> 	  
 	 <div class="expert-forms__group">
-	  <fieldset class="form-spec__field">
+	  <fieldset class="expert-form__spec">
 	   <label for="" class="form-spec__lab">
 	    <span class="form-spec__icon">
 		</span>
 		<div class="form-spec__select">
-		 <input class="form-spec__select-1" type="text" name="specialty" placeholder="Специальность">
+		 <input class="form-spec__select-item" type="text" name="specialty" placeholder="Специальность">
 		</div>	    
 	   </label>
 	  </fieldset>
-	   <fieldset class="form-sity__field">
+	   <fieldset class="expert-form__sity">
 	    <label for="" class="form-sity__lab">	     
 	     <span class="form-sity__icon">
 		 </span>
 		  <div class="form-spec__select">
-	      <input class="form-spec__select-1" type="text" name="place" placeholder="Выберите город">
+	      <input class="form-spec__select-item" type="text" name="place" placeholder="Выберите город">
 	      </div>
 	    </label>
 	  </fieldset>
-	  <fieldset class="form-place__field">
-	  <label for="" class="form-place__lab">	   		 
+	  <fieldset class="expert-form__place">
+	   <label for="" class="form-place__lab">	   		 
 	    <span class="form-place__icon">
-		</span>
-		<div class="form-place__select">
-		  <select id="cd-dropdown" class="cd-select">	
-            <option value="-1" selected>Уточните район</option>
-	        <option value="1" class="icon-monkey">Любые районы метро</option>
-	        <option value="2" class="icon-bear">Автозаводская</option>
-	        <option value="3" class="icon-squirrel">Академическая</option>
-	        <option value="4" class="icon-elephant">Александровский сад</option>
-          </select>	       
-	   </div>
+		</span>		
+         <div class="form-place__select">		
+          <div class="dropdown">
+           <button onclick="myFunction()" class="dropbtn">Уточните район</button>
+            <div id="myDropdown" class="dropdown-content">
+             <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+             <a href="#about">About</a>
+             <a href="#base">Base</a>
+             <a href="#blog">Blog</a>
+             <a href="#contact">Contact</a>
+             <a href="#custom">Custom</a>
+             <a href="#support">Support</a>
+             <a href="#tools">Tools</a>
+            </div>
+	      </div>	
+	     </div>	   
 	  </fieldset>
-	   <form class="navigation_item">
-	    <input type="submit" name="submit" value="Подобрать" class="submit">	
+	   <form class="expert-form__pickup">
+	    <button type="submit" class="form-pickup__submit">Подобрать</button>	
        </form>
      </div>	  
-	  <div class="form_choice_select">
-		 <div class="form_choice_line"></div>
-		 <div class="form_choice_line no_line"> или </div>
-		 <div class="form_choice_line"></div>
-	  </div>	   
+	 <div class="form-choice_select">
+	  <div class="form-choice_line"></div>
+	   <div class="form-choice_line no_line"> или </div>
+	    <div class="form-choice_line"></div>
+	    </div>	   
     </div>	   
-   </div>    
-     <div class="submit2-wrapper">
-       <input type="submit" name="submit2" value="Заказать подбор специалиста БЕСПЛАТНО" class="submit2">
-	 </div>
+   </div> 
    
-   <div class="menu_professionals width-wrapper">Все профессионалы</div>    
-	<div class="nav__columns">
-	<div class="row"> 
-	<div class="nav__column">
-      <div class="nav__navigation-wrapper">
-	   <div class="nav__navigation_title"><strong>Мастера<br>по ремонту</strong></div>
-	   <span class="nav__navigation__cnt">10 747</span>
+     <div class="specialist-selection__wrap">
+       <button type="submit" class="specialist-selection__btn">Заказать подбор специалиста БЕСПЛАТНО</button>
+	 </div> 
+  <div class="menu-professionals__wrap">
+   <div class="row">
+    <h2 class="menu-professionals">Все профессионалы</h2>    
+	<div class="nav-columns">	
+	 <div class="nav__column">
+      <div class="nav-column__navigation">
+	   <div class="column-navigation__title"><strong>Мастера<br>по ремонту</strong></div>
+	   <span class="column-navigation__cnt">10 747</span>
 	  </div>
 	    <ul class="catalog-navigation">
 	     <li><a target="_blank" class="link_nav">Сантехники<span class="catalog-navigation__cnt">4 645</span></a></li>
@@ -125,9 +131,9 @@
 	   </ul>	  
 	 </div>
 	 <div class="nav__column">
-      <div class="nav__navigation-wrapper">
-	   <div class="nav__navigation_title"><strong>Мастера<br>по ремонту</strong></div>
-	   <span class="nav__navigation__cnt">10 747</span>
+      <div class="nav-column__navigation">
+	   <div class="column-navigation__title"><strong>Мастера<br>по ремонту</strong></div>
+	   <span class="column-navigation__cnt">10 747</span>
 	  </div>
 	    <ul class="catalog-navigation">
 	     <li><a target="_blank" class="link_nav">Сантехники<span class="catalog-navigation__cnt">4 645</span></a></li>
@@ -139,9 +145,9 @@
 	   </ul>	  
 	 </div>
 	<div class="nav__column">
-      <div class="nav__navigation-wrapper">
-	   <div class="nav__navigation_title"><strong>Мастера<br>по ремонту</strong></div>
-	   <span class="nav__navigation__cnt">10 747</span>
+      <div class="nav-column__navigation">
+	   <div class="column-navigation__title"><strong>Мастера<br>по ремонту</strong></div>
+	   <span class="column-navigation__cnt">10 747</span>
 	  </div>
 	    <ul class="catalog-navigation">
 	     <li><a target="_blank" class="link_nav">Сантехники<span class="catalog-navigation__cnt">4 645</span></a></li>
@@ -153,9 +159,9 @@
 	   </ul>	  
 	 </div>
 	 <div class="nav__column">
-      <div class="nav__navigation-wrapper">
-	   <div class="nav__navigation_title"><strong>Мастера<br>по ремонту</strong></div>
-	   <span class="nav__navigation__cnt">10 747</span>
+      <div class="nav-column__navigation">
+	   <div class="column-navigation__title"><strong>Мастера<br>по ремонту</strong></div>
+	   <span class="column-navigation__cnt">10 747</span>
 	  </div>
 	    <ul class="catalog-navigation">
 	     <li><a target="_blank" class="link_nav">Сантехники<span class="catalog-navigation__cnt">4 645</span></a></li>
@@ -165,13 +171,12 @@
 	     <li><a target="_blank" class="link_nav">Мелкий ремонт<span class="catalog-navigation__cnt">1 534</span></a></li>
 	     <li><a target="_blank" class="link_nav"><span class="catalog__strong"><strong>Все 930</strong></span> услуг</a></li>
 	   </ul>	  
-	</div>
-	</div>
-	<div class="row"> 
+	</div>	
+	
 	  <div class="nav__column">
-      <div class="nav__navigation-wrapper">
-	   <div class="nav__navigation_title"><strong>Мастера<br>по ремонту</strong></div>
-	   <span class="nav__navigation__cnt">10 747</span>
+      <div class="nav-column__navigation">
+	   <div class="column-navigation__title"><strong>Мастера<br>по ремонту</strong></div>
+	   <span class="column-navigation__cnt">10 747</span>
 	  </div>
 	    <ul class="catalog-navigation">
 	     <li><a target="_blank" class="link_nav">Сантехники<span class="catalog-navigation__cnt">4 645</span></a></li>
@@ -183,9 +188,9 @@
 	   </ul>	  
 	 </div>
 	    <div class="nav__column">
-      <div class="nav__navigation-wrapper">
-	   <div class="nav__navigation_title"><strong>Мастера<br>по ремонту</strong></div>
-	   <span class="nav__navigation__cnt">10 747</span>
+      <div class="nav-column__navigation">
+	   <div class="column-navigation__title"><strong>Мастера<br>по ремонту</strong></div>
+	   <span class="column-navigation__cnt">10 747</span>
 	  </div>
 	    <ul class="catalog-navigation">
 	     <li><a target="_blank" class="link_nav">Сантехники<span class="catalog-navigation__cnt">4 645</span></a></li>
@@ -197,9 +202,9 @@
 	   </ul>	  
 	 </div>
 	   <div class="nav__column">
-      <div class="nav__navigation-wrapper">
-	   <div class="nav__navigation_title"><strong>Мастера<br>по ремонту</strong></div>
-	   <span class="nav__navigation__cnt">10 747</span>
+      <div class="nav-column__navigation">
+	   <div class="column-navigation__title"><strong>Мастера<br>по ремонту</strong></div>
+	   <span class="column-navigation__cnt">10 747</span>
 	  </div>
 	    <ul class="catalog-navigation">
 	     <li><a target="_blank" class="link_nav">Сантехники<span class="catalog-navigation__cnt">4 645</span></a></li>
@@ -211,9 +216,9 @@
 	   </ul>	  
 	 </div>
 	   <div class="nav__column">
-        <div class="nav__navigation-wrapper">
-	     <div class="nav__navigation_title"><strong>Мастера<br>по ремонту</strong></div>
-	     <span class="nav__navigation__cnt">10 747</span>
+        <div class="nav-column__navigation">
+	     <div class="column-navigation__title"><strong>Мастера<br>по ремонту</strong></div>
+	     <span class="column-navigation__cnt">10 747</span>
 	    </div>
 	    <ul class="catalog-navigation">
 	     <li><a target="_blank" class="link_nav">Сантехники<span class="catalog-navigation__cnt">4 645</span></a></li>
@@ -224,13 +229,13 @@
 	     <li><a target="_blank" class="link_nav"><span class="catalog__strong"><strong>Все 930</strong></span> услуг</a></li>
 	    </ul>	  
 	  </div>
+	</div>		
+    
+   </div>
+  </div>
+  <div class="search-else__wrap">
+      <button type="submit" class="search-else__btn">Ищете кого-то еще?</button>
 	</div>
-	</div>
-		
-    <div class="submit2-wrapper row">
-       <input type="submit" name="submit2" value="Ищете кого-то еще?" class="search-button">
-	 </div>
-   
     <div class="history-wrapper">
 	 <div class="row">
 	  <div class="history__column">	
@@ -258,82 +263,72 @@
 	 </div>	
 	</div>
 	
-    <div class="banner__color">
-	  <div class="menu_professionals row">Как это работает?</div>	
-	  <div class="banner row"></div>
-	</div>
-	
-	<div class="menu_blog_background">
-	  <h2 class="menu_blog row"><a href="site1_blog.html">БЛОГ</a></h2>	  
-      <p class="latest_articles align-center">Последние статьи</p>
-	</div>	
-	
-	<div class="grid grid-wrapper">
-	  <div class="row">
-	  <div class="home-section__announcement">
-	    <div class="market-news-item">
-		<div class="market-img-wrapper">
+    <section class="scheme-work__wrap">
+     <div class="row">
+	  <h2 class="scheme-work__name">Как это работает?</h2>	
+	  <figure class="scheme-work__banner"></figure>
+	   </div>
+	</section>
+
+   <section class="menu-blog">
+	<div class="row">
+	   <h2 class="menu-blog__name"><a href="site1_blog.html">БЛОГ</a></h2>	  
+       <p class="menu-blog__title">Последние статьи</p>     	
+	  <ul class="menu-blog__list">
+	   <li class="blog-list__wrap">	    
+		<div class="blog-list__img">
 		<a href="http://unstock.envato.com/collections/the-art-of-food-5306823">
-		<img class="vignette-img" src="https://0.s3.envato.com/files/156700323/category-the-art-of-food-260x140.jpg" alt></a>
+		<img class="blog-list__img_type" src="https://0.s3.envato.com/files/156700323/category-the-art-of-food-260x140.jpg" alt></a>
 		</div>
-		<h5 class="vignette-title">
+		<h5 class="blog-list__title">
 		<a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce">Доступна новая услуга</a>
 		</h5>
-		<p class="vignette-description">Бесплатное дополнение к веб-браузеру для защиты данных в интернете и блокировки вредоносных веб-сайтов на стадии загрузки</p>
-		<p class="vignette-readall"><a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce">Читать полностью&hellip;</a></p>
-		</div>		
-	  </div>
-	  
-	   <div class="home-section__announcement">
-	    <div class="market-news-item">
-		<div class="market-img-wrapper">
-		<a href="http://unstock.envato.com/collections/the-art-of-food-5306823">
-		<img class="vignette-img" src="https://0.s3.envato.com/files/156700323/category-the-art-of-food-260x140.jpg" alt></a>
+		<p class="blog-list__text">Бесплатное дополнение к веб-браузеру для защиты данных в интернете и блокировки вредоносных веб-сайтов на стадии загрузки</p>
+		<p class="blog-list__textall"><a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce">Читать полностью&hellip;</a></p>				
+	  </li>	  
+	  <li class="blog-list__wrap">
+	    <div class="blog-list__img">
+		 <a href="http://unstock.envato.com/collections/the-art-of-food-5306823">
+		 <img class="blog-list__img_type" src="https://0.s3.envato.com/files/156700323/category-the-art-of-food-260x140.jpg" alt></a>
 		</div>
-		<h5 class="vignette-title">
+		<h5 class="blog-list__title">
 		<a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce">Доступна новая услуга</a>
 		</h5>
-		<p class="vignette-description">Бесплатное дополнение к веб-браузеру для защиты данных в интернете и блокировки вредоносных веб-сайтов на стадии загрузки</p>
-		<p class="vignette-readall"><a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce">Читать полностью&hellip;</a></p>
-		</div>		
-	  </div>
-	  
-	   <div class="home-section__announcement">
-	    <div class="market-news-item">
-		<div class="market-img-wrapper">
+		<p class="blog-list__text">Бесплатное дополнение к веб-браузеру для защиты данных в интернете и блокировки вредоносных веб-сайтов на стадии загрузки</p>
+		<p class="blog-list__textall"><a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce">Читать полностью&hellip;</a></p>
+	  </li>
+	  <li class="blog-list__wrap">
+		<div class="blog-list__img">
 		<a href="http://unstock.envato.com/collections/the-art-of-food-5306823">
-		<img class="vignette-img" src="https://0.s3.envato.com/files/156700323/category-the-art-of-food-260x140.jpg" alt></a>
+		<img class="blog-list__img_type" src="https://0.s3.envato.com/files/156700323/category-the-art-of-food-260x140.jpg" alt></a>
 		</div>
-		<h5 class="vignette-title">
+		<h5 class="blog-list__title">
 		<a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce">Доступна новая услуга</a>
 		</h5>
-		<p class="vignette-description">Бесплатное дополнение к веб-браузеру для защиты данных в интернете и блокировки вредоносных веб-сайтов на стадии загрузки</p>
-		<p class="vignette-readall"><a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce">Читать полностью&hellip;</a></p>
-		</div>		
-	  </div>
-	 
-	   <nav class="dotnav">
-	    <ul>
-	      <li>
-		   <a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce" class="dotnav-item"></a>
+		<p class="blog-list__text">Бесплатное дополнение к веб-браузеру для защиты данных в интернете и блокировки вредоносных веб-сайтов на стадии загрузки</p>
+		<p class="blog-list__textall"><a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce">Читать полностью&hellip;</a></p>
+	  </li>		
+	  </ul>	    
+	    <ul class="slick-dots">
+	      <li class="slick-active">
+		   <button type="button" data-role="none""></button>
 		  </li>
 		  <li>
-		   <a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce" class="dotnav-item current"></a></li>
-	      <li>
-		   <a href="http://themeforest.net/popular_item/by_category?category=wordpress/ecommerce/woocommerce" class="dotnav-item current"></a>
+		   <button type="button" data-role="none""></button>
 		  </li>
-	     </ul>
-	   </nav>
-	  </div>
-	</div>   	  
-  	
-    <section class="network_background">
-     <div class="width-wrapper">
-	  <div class="title_group">	 
-	   <p class="network_title">еще больше о нас</p>	  
-       <p>в социальных сетях</p>	
-	  </div>
-	   <div class="page-index__socials">
+	      <li>
+	       <button type="button" data-role="none""></button>
+		  </li>
+	    </ul>	   
+	</div>
+   </section>	  
+	  	
+    <section class="network-wrap">
+     <div class="row">
+     <div class="page-index__socials">
+	  <h1 class="network__title-str">еще больше о нас</h1> 
+	   <h1 class="network__title">в социальных сетях</h1>	  
+       
 	    <div class="social-plugin">	
          <div class="item"><img src="../build/img/social1.png" alt="vk"></div>		
 		</div>		
@@ -400,15 +395,29 @@
      
 	
 		
-		<script type="text/javascript">
-			
-			$( function() {
-				
-				$( '#cd-dropdown' ).dropdown();
+		
+		<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
-			});
-
-		</script>
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+         </script>
 	
 
   </body>
